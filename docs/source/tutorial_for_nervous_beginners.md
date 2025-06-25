@@ -16,7 +16,7 @@ $ tts --list_models  # list the available models.
 
 You can call `tts-server` to start a local demo server that you can open on
 your favorite web browser and 🗣️ (make sure to install the additional
-dependencies with `pip install coqui-tts[server]`).
+dependencies with `pip install "coqui-tts[server]"`).
 
 ```bash
 $ tts-server -h # see the help

@@ -3,7 +3,7 @@
 ![server.gif](https://github.com/idiap/coqui-ai-TTS/raw/main/images/demo_server.gif)
 
 You can boot up a demo 🐸TTS server to run an inference with your models (make
-sure to install the additional dependencies with `pip install coqui-tts[server]`).
+sure to install the additional dependencies with `pip install "coqui-tts[server]"`).
 Note that the server is not optimized for performance.
 
 The demo server provides pretty much the same interface as the CLI command.

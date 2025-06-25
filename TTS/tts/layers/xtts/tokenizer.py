@@ -23,7 +23,7 @@ def get_spacy_lang(lang):
         from spacy.lang.ja import Japanese
         from spacy.lang.zh import Chinese
     except ImportError as e:
-        raise ImportError("enable_text_splitting=True requires Spacy: pip install spacy[ja]") from e
+        raise ImportError("enable_text_splitting=True requires Spacy: pip install 'spacy[ja]'") from e
     """Return Spacy language used for sentence splitting."""
     if lang == "zh":
         return Chinese()

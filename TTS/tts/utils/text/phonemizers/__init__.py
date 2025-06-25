@@ -77,19 +77,19 @@ def get_phonemizer_by_name(name: str, **kwargs) -> BasePhonemizer:
         return Gruut(**kwargs)
     if name == "zh_cn_phonemizer":
         if ZH_CN_Phonemizer is None:
-            raise ValueError("You need to install ZH phonemizer dependencies. Try `pip install coqui-tts[zh]`.")
+            raise ValueError("You need to install ZH phonemizer dependencies. Try `pip install 'coqui-tts[zh]'`.")
         return ZH_CN_Phonemizer(**kwargs)
     if name == "ja_jp_phonemizer":
         if JA_JP_Phonemizer is None:
-            raise ValueError("You need to install JA phonemizer dependencies. Try `pip install coqui-tts[ja]`.")
+            raise ValueError("You need to install JA phonemizer dependencies. Try `pip install 'coqui-tts[ja]'`.")
         return JA_JP_Phonemizer(**kwargs)
     if name == "ko_kr_phonemizer":
         if KO_KR_Phonemizer is None:
-            raise ValueError("You need to install KO phonemizer dependencies. Try `pip install coqui-tts[ko]`.")
+            raise ValueError("You need to install KO phonemizer dependencies. Try `pip install 'coqui-tts[ko]'`.")
         return KO_KR_Phonemizer(**kwargs)
     if name == "bn_phonemizer":
         if BN_Phonemizer is None:
-            raise ValueError("You need to install BN phonemizer dependencies. Try `pip install coqui-tts[bn]`.")
+            raise ValueError("You need to install BN phonemizer dependencies. Try `pip install 'coqui-tts[bn]'`.")
         return BN_Phonemizer(**kwargs)
     if name == "be_phonemizer":
         return BEL_Phonemizer(**kwargs)
